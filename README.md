@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# 💸 Money Split
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**간단하고 직관적인 여행 정산 도우미**  
+MoneySplit은 여행 중 사용한 지출 내역을 빠르게 정리하고, 친구들과 링크만으로 손쉽게 공유할 수 있는 경량 웹 서비스입니다.  
+계정 없이도 사용 가능하며, 여행이 끝난 후 서로의 정산 내역을 확인하고 수정할 수 있어요!
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📱 **모바일 최적화** UI
+- 🔐 **로그인 없이 사용** 가능
+- 🔗 **링크 공유를 통한 협업**
+- 🧾 **카테고리별 소비 내역** 정리
+- 🟢 **누가 정산했는지, 아직 미정산인지** 바로 확인
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **Zustand** (상태 관리)
+- **Vercel** (배포)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Getting Started
+
+### 1. 프로젝트 클론
+
+```bash
+git clone https://github.com/253eosam/money-split.git
+cd money-split
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. 의존성 설치
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+pnpm install
 ```
+
+### 3. 로컬 개발 서버 실행
+
+```bash
+pnpm dev
+```
+
+## 🌍 배포
+
+> 최신 버전은 Vercel을 통해 배포됩니다.
+
+🔗 **[MoneySplit 바로가기](https://money-split.vercel.app/)**
+
+## 📦 Scripts
+
+| 명령어         | 설명                  |
+| -------------- | --------------------- |
+| `pnpm dev`     | 개발 서버 실행        |
+| `pnpm build`   | 프로덕션 빌드         |
+| `pnpm preview` | 빌드된 파일 로컬 확인 |
+| `pnpm lint`    | 코드 린트 검사        |
+
+## 📌 향후 계획 (Roadmap)
+
+- [ ] PDF 또는 이미지 내보내기
+- [ ] 간단한 시각화 기능 (차트 등)
+
+## 📄 License
+
+MIT © 2025 MoneySplit
