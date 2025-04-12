@@ -24,7 +24,9 @@ function Controls() {
 function App() {
   return (
     <div className="flex flex-col items-center justify-center min-h-svh">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="text-3xl font-bold underline text-red-500">
+      타이포그래피: ‘Typography’, 1972. @ㅇ0ㅇ ₩0 〈응♥〉 『힣♪』
+        </h1>
       <BearCounter />
       <Controls />
     </div>
